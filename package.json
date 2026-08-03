@@ -1,0 +1,14 @@
+{
+  "name": "com.krimelz.urp-rain-on-lens-effect",
+  "version": "1.0.0",
+  "displayName": "URP Rain On Lens Post Process Effect",
+  "description": "Rain On Lens post process effect for Unity 6.3 URP.",
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "17.3.0"
+  },
+  "author": {
+    "name": "krimelz",
+    "email": "krimzida21@gmail.com"
+  },
+  "unity": "6000.3"
+}
