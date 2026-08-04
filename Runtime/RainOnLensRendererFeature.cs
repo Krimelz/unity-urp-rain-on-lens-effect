@@ -24,6 +24,11 @@ namespace RainOnLens
 
         public override void Create()
         {
+            if (!m_Material)
+            {
+                m_Material = CoreUtils.CreateEngineMaterial("Shader Graphs/RainOnLens");
+            }
+
             if (m_Material)
             {
                 m_FullScreenPass = new RainOnLensPostRenderPass(name, m_Material);
@@ -68,6 +73,7 @@ namespace RainOnLens
 
         protected override void Dispose(bool disposing)
         {
+            CoreUtils.Destroy(m_Material);
             m_FullScreenPass?.Dispose();
         }
 
