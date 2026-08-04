@@ -37,10 +37,21 @@ namespace Game.Codebase.Renderer.RainOnLens
                 return;
             }
 
-            if (renderingData.cameraData.cameraType == CameraType.Preview || renderingData.cameraData.cameraType == CameraType.Reflection)
+            if (renderingData.cameraData.camera.cameraType is not (CameraType.Game or CameraType.SceneView))
             {
                 return;
             }
+
+#if UNITY_EDITOR
+            if (renderingData.cameraData.isSceneViewCamera)
+            {
+                var sceneView = UnityEditor.SceneView.currentDrawingSceneView;
+                if (sceneView != null && !sceneView.sceneViewState.showImageEffects)
+                {
+                    return;
+                }
+            }
+#endif
 
             var volume = VolumeManager.instance.stack?.GetComponent<RainOnLensVolumeComponent>();
 
