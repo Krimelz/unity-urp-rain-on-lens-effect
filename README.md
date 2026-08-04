@@ -1,6 +1,6 @@
 # Requirements
 
-Unity 6.3+ and URP 17.3+ version.
+Unity 6.3+ and URP 17.3+ version. Compatible with Render Graph only.
 
 # Features
 
