@@ -2,7 +2,7 @@ using System;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-namespace Game.Codebase.Renderer.RainOnLens
+namespace RainOnLens
 {
     [Serializable]
     [DisplayInfo(name = "Rain On Lens")]

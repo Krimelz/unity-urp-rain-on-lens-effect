@@ -3,7 +3,7 @@ using UnityEngine.Rendering;
 using UnityEngine.Rendering.RenderGraphModule;
 using UnityEngine.Rendering.Universal;
 
-namespace Game.Codebase.Renderer.RainOnLens
+namespace RainOnLens
 {
     public sealed class RainOnLensRendererFeature : ScriptableRendererFeature
     {
