@@ -4,12 +4,9 @@ using UnityEngine.Rendering.Universal;
 
 namespace RainOnLens
 {
-    public sealed partial class RainOnLensRendererFeature : ScriptableRendererFeature
+    public sealed class RainOnLensRendererFeature : ScriptableRendererFeature
     {
-        private static readonly int DisappearingSpeed = Shader.PropertyToID("_DisappearingSpeed");
-        private static readonly int Intensity = Shader.PropertyToID("_Intensity");
-        private static readonly int HighEdge = Shader.PropertyToID("_HighEdge");
-        private static readonly int LowEdge = Shader.PropertyToID("_LowEdge");
+        
 
         private Material m_Material;
         private RainOnLensPostRenderPass m_FullScreenPass;
